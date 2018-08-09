@@ -1,0 +1,2 @@
+/Users/antoniochiappetta/Google Drive - Developer/Developer/Fourthwave/awake/Temp/UnityVS_obj/Debug/awake.csprojResolveAssemblyReference.cache
+/Users/antoniochiappetta/Google Drive - Developer/Developer/Fourthwave/awake/Temp/UnityVS_obj/Debug/awake.csproj.CoreCompileInputs.cache
