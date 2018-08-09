@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 930998034}
-  sideLimit: 1.8
+  sideLimit: 1.4
 --- !u!1 &1691838879
 GameObject:
   m_ObjectHideFlags: 0
