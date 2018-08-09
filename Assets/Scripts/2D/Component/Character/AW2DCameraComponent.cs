@@ -11,7 +11,7 @@ public class AW2DCameraComponent: MonoBehaviour
 
     private void Update()
 	{
-        if (player.transform.position.x > -6.5 && player.transform.position.x < 6.5) {
+        if (player.transform.position.x > -5 && player.transform.position.x < 5) {
             transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
         }
     }

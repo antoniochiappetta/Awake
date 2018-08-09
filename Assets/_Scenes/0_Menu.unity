@@ -804,7 +804,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 2DWorld
+          m_StringArgument: MainCharBedroom
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -893,6 +893,11 @@ Prefab:
         type: 2}
       propertyPath: autoLoadNextLevelAfter
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114078894801089468, guid: 746bb603d79714050b1f3e9077e2d471,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 746bb603d79714050b1f3e9077e2d471, type: 2}

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/0_Menu.unity
     guid: 50ef02ea2d3e94c1c85dab42d25ee07c
   - enabled: 1
-    path: Assets/_Scenes/2DWorld.unity
+    path: Assets/_Scenes/2DWorld/MainCharBedroom.unity
     guid: 3c0af4e1e660f444d851474d0af97a09
   - enabled: 1
     path: Assets/_Scenes/3DWorld.unity

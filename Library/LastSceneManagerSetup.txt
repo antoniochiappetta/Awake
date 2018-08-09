@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/2DWorld.unity
+- path: Assets/_Scenes/2DWorld/Main Char Bedroom.unity
   isLoaded: 1
   isActive: 1
