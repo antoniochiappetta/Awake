@@ -6,7 +6,6 @@ public class AW2DCharacterComponent: MonoBehaviour
     // MARK: - Properties
 
     public float maxSpeed = 10.0f;
-    private bool isWalking;
     private bool isFacingRight;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
