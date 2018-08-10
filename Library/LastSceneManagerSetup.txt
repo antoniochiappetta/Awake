@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/2DWorld/UpstairsCorridor.unity
+- path: Assets/_Scenes/2DWorld/ParentsBedroom.unity
   isLoaded: 1
   isActive: 1

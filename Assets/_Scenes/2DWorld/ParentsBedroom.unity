@@ -268,6 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 115312661}
   - component: {fileID: 115312662}
+  - component: {fileID: 115312663}
   m_Layer: 0
   m_Name: armadio
   m_TagString: Untagged
@@ -332,6 +333,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &115312663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 115312660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 25
 --- !u!1 &173784566
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 207270731}
   - component: {fileID: 207270732}
+  - component: {fileID: 207270733}
   m_Layer: 0
   m_Name: specchioGenitori
   m_TagString: Untagged
@@ -436,6 +450,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &207270733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 207270730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 29
 --- !u!1 &246508160
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,6 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 246508161}
   - component: {fileID: 246508162}
+  - component: {fileID: 246508163}
   m_Layer: 0
   m_Name: grammofono
   m_TagString: Untagged
@@ -509,6 +536,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &246508163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246508160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 28
 --- !u!1 &301474486
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +596,8 @@ GameObject:
   m_Component:
   - component: {fileID: 929472993}
   - component: {fileID: 929472994}
+  - component: {fileID: 929472996}
+  - component: {fileID: 929472995}
   m_Layer: 0
   m_Name: cornicePortaGenitori
   m_TagString: Untagged
@@ -621,6 +662,32 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &929472995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929472992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba68bcfae3b54425b2d3e6664496929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2
+  envA: 2
+  envB: 1
+--- !u!114 &929472996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929472992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 32
 --- !u!1 &930998034
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,6 +848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1002059464}
   - component: {fileID: 1002059465}
+  - component: {fileID: 1002059466}
   m_Layer: 0
   m_Name: mobiletto
   m_TagString: Untagged
@@ -845,6 +913,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1002059466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1002059463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 31
 --- !u!1 &1004578276
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1004578277}
   - component: {fileID: 1004578278}
+  - component: {fileID: 1004578279}
   m_Layer: 0
   m_Name: portaBagnoChiusa
   m_TagString: Untagged
@@ -918,6 +999,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1004578279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1004578276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 30
 --- !u!1 &1131124017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,6 +1093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1353321995}
   - component: {fileID: 1353321996}
+  - component: {fileID: 1353321997}
   m_Layer: 0
   m_Name: comodinoGenitori
   m_TagString: Untagged
@@ -1064,6 +1158,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1353321997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353321994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 24
 --- !u!1 &1503367873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,6 +1420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1691838880}
   - component: {fileID: 1691838881}
+  - component: {fileID: 1691838882}
   m_Layer: 0
   m_Name: mobileGenitori
   m_TagString: Untagged
@@ -1378,6 +1485,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1691838882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1691838879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 27
 --- !u!1 &1699700888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,6 +1646,7 @@ Transform:
   m_Children:
   - {fileID: 1131124019}
   - {fileID: 1503367874}
+  - {fileID: 1925172648}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1539,6 +1659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1818979535}
   - component: {fileID: 1818979536}
+  - component: {fileID: 1818979537}
   m_Layer: 0
   m_Name: lettoGenitori
   m_TagString: Untagged
@@ -1603,6 +1724,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1818979537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1818979534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 23
 --- !u!1 &1869701051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,6 +1811,47 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1925172647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1925172648}
+  - component: {fileID: 1925172649}
+  m_Layer: 0
+  m_Name: window
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1925172648
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1925172647}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.42, y: 0, z: 0}
+  m_LocalScale: {x: 1.53, y: 3.12, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1746650808}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1925172649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1925172647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 26
 --- !u!1 &1930965724
 GameObject:
   m_ObjectHideFlags: 0
