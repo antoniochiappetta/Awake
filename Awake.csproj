@@ -353,6 +353,9 @@
     <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\PlayerPrefsManager.cs" />
     <Compile Include="Assets\Scripts\SetStartVolume.cs" />
+    <Compile Include="Assets\Scripts\2D\Component\Entity\AW2DEntityComponent.cs" />
+    <Compile Include="Assets\Scripts\2D\Component\Entity\AW2DPassageComponent.cs" />
+    <Compile Include="Assets\Scripts\2D\Component\Entity\AW2DItemComponent.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -17,3 +17,4 @@ public class AW2DCameraComponent: MonoBehaviour
         }
     }
 }
+
