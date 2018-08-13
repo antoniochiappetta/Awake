@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 160138469}
   - component: {fileID: 160138470}
+  - component: {fileID: 160138471}
   m_Layer: 0
   m_Name: MobileCorridoio
   m_TagString: Untagged
@@ -186,6 +187,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &160138471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 160138468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 20
 --- !u!1 &173784566
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +356,8 @@ GameObject:
   m_Component:
   - component: {fileID: 249029548}
   - component: {fileID: 249029547}
+  - component: {fileID: 249029549}
+  - component: {fileID: 249029550}
   m_Layer: 0
   m_Name: finestra
   m_TagString: Untagged
@@ -407,6 +422,32 @@ Transform:
   m_Father: {fileID: 301474487}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &249029549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249029546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 22
+--- !u!114 &249029550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249029546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba68bcfae3b54425b2d3e6664496929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+  envA: 1
+  envB: 4
 --- !u!1 &249899579
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 249899580}
   - component: {fileID: 249899581}
+  - component: {fileID: 249899582}
   m_Layer: 0
   m_Name: botolaCorridoio
   m_TagString: Untagged
@@ -480,6 +522,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &249899582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249899579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 21
 --- !u!1 &280603002
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 579032764}
   - component: {fileID: 579032763}
+  - component: {fileID: 579032765}
   m_Layer: 0
   m_Name: porta3chiusa
   m_TagString: Untagged
@@ -664,6 +719,18 @@ Transform:
   m_Father: {fileID: 301474487}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579032765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579032762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 18
 --- !u!1 &745080910
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,6 +740,8 @@ GameObject:
   m_Component:
   - component: {fileID: 745080912}
   - component: {fileID: 745080911}
+  - component: {fileID: 745080913}
+  - component: {fileID: 745080914}
   m_Layer: 0
   m_Name: porta4chiusa
   m_TagString: Untagged
@@ -737,6 +806,32 @@ Transform:
   m_Father: {fileID: 301474487}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &745080913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745080910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 19
+--- !u!114 &745080914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 745080910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba68bcfae3b54425b2d3e6664496929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2
+  envA: 2
+  envB: 1
 --- !u!1 &930998034
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +1087,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1547675894}
   - component: {fileID: 1547675893}
+  - component: {fileID: 1547675895}
+  - component: {fileID: 1547675896}
   m_Layer: 0
   m_Name: porta2chiusa
   m_TagString: Untagged
@@ -1056,6 +1153,32 @@ Transform:
   m_Father: {fileID: 301474487}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1547675895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1547675892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 17
+--- !u!114 &1547675896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1547675892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba68bcfae3b54425b2d3e6664496929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 3
+  envA: 3
+  envB: 1
 --- !u!1 &1610109928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,6 +1487,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1841613420}
   - component: {fileID: 1841613419}
+  - component: {fileID: 1841613421}
+  - component: {fileID: 1841613422}
   m_Layer: 0
   m_Name: porta1chiusa
   m_TagString: Untagged
@@ -1428,6 +1553,32 @@ Transform:
   m_Father: {fileID: 301474487}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1841613421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1841613418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 16
+--- !u!114 &1841613422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1841613418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba68bcfae3b54425b2d3e6664496929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  envA: 0
+  envB: 1
 --- !u!1 &1869701051
 GameObject:
   m_ObjectHideFlags: 0

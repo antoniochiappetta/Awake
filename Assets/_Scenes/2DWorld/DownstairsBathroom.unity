@@ -482,6 +482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217647712}
   - component: {fileID: 1217647711}
+  - component: {fileID: 1217647713}
   m_Layer: 0
   m_Name: lavandino
   m_TagString: Untagged
@@ -546,6 +547,18 @@ Transform:
   m_Father: {fileID: 301474487}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1217647713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217647710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 51
 --- !u!1 &1233061489
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1233061491}
   - component: {fileID: 1233061490}
+  - component: {fileID: 1233061492}
   m_Layer: 0
   m_Name: specchioBagno
   m_TagString: Untagged
@@ -619,6 +633,18 @@ Transform:
   m_Father: {fileID: 301474487}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1233061492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233061489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 52
 --- !u!1 &1360931604
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360931605}
   - component: {fileID: 1360931606}
+  - component: {fileID: 1360931607}
   m_Layer: 0
   m_Name: vascaBagno2
   m_TagString: Untagged
@@ -692,6 +719,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1360931607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1360931604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 53
 --- !u!1 &1516822642
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +835,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1625551817}
   - component: {fileID: 1625551818}
+  - component: {fileID: 1625551820}
+  - component: {fileID: 1625551819}
   m_Layer: 0
   m_Name: portaChiusaBagno2
   m_TagString: Untagged
@@ -860,6 +901,32 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1625551819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625551816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba68bcfae3b54425b2d3e6664496929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 4
+  envA: 5
+  envB: 4
+--- !u!114 &1625551820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625551816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 50
 --- !u!1 &1699700888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,6 +1162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1916513521}
   - component: {fileID: 1916513522}
+  - component: {fileID: 1916513523}
   m_Layer: 0
   m_Name: wcBagno2
   m_TagString: Untagged
@@ -1159,6 +1227,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1916513523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1916513520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 54
 --- !u!1 &2085432958
 GameObject:
   m_ObjectHideFlags: 0

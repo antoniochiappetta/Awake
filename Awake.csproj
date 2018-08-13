@@ -322,6 +322,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\2D\Component\Character\AW2DCameraComponent.cs" />
     <Compile Include="Assets\Scripts\2D\Component\Character\AW2DCharacterComponent.cs" />
+    <Compile Include="Assets\Scripts\2D\Component\Entity\AW2DEntityComponent.cs" />
+    <Compile Include="Assets\Scripts\2D\Component\Entity\AW2DItemComponent.cs" />
+    <Compile Include="Assets\Scripts\2D\Component\Entity\AW2DPassageComponent.cs" />
     <Compile Include="Assets\Scripts\2D\Model\Action\AW2DAction.cs" />
     <Compile Include="Assets\Scripts\2D\Model\Action\AW2DCommonActionsDelegate.cs" />
     <Compile Include="Assets\Scripts\2D\Model\Action\ConcreteActions\AW2DExamineAction.cs" />
@@ -353,9 +356,9 @@
     <Compile Include="Assets\Scripts\MusicManager.cs" />
     <Compile Include="Assets\Scripts\PlayerPrefsManager.cs" />
     <Compile Include="Assets\Scripts\SetStartVolume.cs" />
-    <Compile Include="Assets\Scripts\2D\Component\Entity\AW2DEntityComponent.cs" />
-    <Compile Include="Assets\Scripts\2D\Component\Entity\AW2DPassageComponent.cs" />
-    <Compile Include="Assets\Scripts\2D\Component\Entity\AW2DItemComponent.cs" />
+    <Compile Include="Assets\Scripts\2D\Component\Menu\AW2DContextMenu.cs" />
+    <Compile Include="Assets\Scripts\2D\Component\Menu\AW2DContextMenuPhase.cs" />
+    <Compile Include="Assets\Scripts\2D\Component\Menu\AW2DContextMenuElement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -224,6 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 188621150}
   - component: {fileID: 188621151}
+  - component: {fileID: 188621152}
   m_Layer: 0
   m_Name: portaIngresso
   m_TagString: Untagged
@@ -288,6 +289,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &188621152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188621149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 40
 --- !u!1 &301474486
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +340,7 @@ Transform:
   - {fileID: 1382619198}
   - {fileID: 1920973058}
   - {fileID: 1945589668}
+  - {fileID: 1939910634}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -636,6 +650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 957455709}
   - component: {fileID: 957455710}
+  - component: {fileID: 957455711}
   m_Layer: 0
   m_Name: poltronaDX
   m_TagString: Untagged
@@ -700,6 +715,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &957455711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957455708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 47
 --- !u!1 &1012873413
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,6 +736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1012873414}
   - component: {fileID: 1012873415}
+  - component: {fileID: 1012873416}
   m_Layer: 0
   m_Name: appendiabito
   m_TagString: Untagged
@@ -773,6 +801,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1012873416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012873413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 44
 --- !u!1 &1313771637
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +822,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1313771639}
   - component: {fileID: 1313771638}
+  - component: {fileID: 1313771640}
+  - component: {fileID: 1313771641}
   m_Layer: 0
   m_Name: portaBagno
   m_TagString: Untagged
@@ -846,6 +888,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1313771640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313771637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 38
+--- !u!114 &1313771641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313771637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba68bcfae3b54425b2d3e6664496929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 4
+  envA: 5
+  envB: 4
 --- !u!1 &1356221082
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +996,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1382619198}
   - component: {fileID: 1382619199}
+  - component: {fileID: 1382619200}
   m_Layer: 0
   m_Name: portaCucina
   m_TagString: Untagged
@@ -992,6 +1061,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1382619200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382619197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 43
 --- !u!1 &1516822642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,6 +1177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1581197135}
   - component: {fileID: 1581197136}
+  - component: {fileID: 1581197137}
   m_Layer: 0
   m_Name: portaGarage
   m_TagString: Untagged
@@ -1160,6 +1242,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1581197137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1581197134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 41
 --- !u!1 &1699700888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,6 +1338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1704513545}
   - component: {fileID: 1704513546}
+  - component: {fileID: 1704513547}
   m_Layer: 0
   m_Name: lampada
   m_TagString: Untagged
@@ -1308,6 +1403,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1704513547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1704513544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 45
 --- !u!1001 &1733490881
 Prefab:
   m_ObjectHideFlags: 0
@@ -1468,6 +1575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1888657299}
   - component: {fileID: 1888657300}
+  - component: {fileID: 1888657301}
   m_Layer: 0
   m_Name: poltronaSX
   m_TagString: Untagged
@@ -1532,6 +1640,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1888657301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1888657298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 46
 --- !u!1 &1920973057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,6 +1661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1920973058}
   - component: {fileID: 1920973059}
+  - component: {fileID: 1920973060}
   m_Layer: 0
   m_Name: mobiletto
   m_TagString: Untagged
@@ -1605,6 +1726,74 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1920973060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920973057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 48
+--- !u!1 &1939910633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1939910634}
+  - component: {fileID: 1939910636}
+  - component: {fileID: 1939910635}
+  m_Layer: 0
+  m_Name: scale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1939910634
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1939910633}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.29, y: 1.06, z: 0}
+  m_LocalScale: {x: 2.45, y: 3.01, z: 1}
+  m_Children: []
+  m_Father: {fileID: 301474487}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1939910635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1939910633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ba68bcfae3b54425b2d3e6664496929, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+  envA: 4
+  envB: 1
+--- !u!114 &1939910636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1939910633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 39
 --- !u!1 &1945589667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,6 +1803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1945589668}
   - component: {fileID: 1945589669}
+  - component: {fileID: 1945589670}
   m_Layer: 0
   m_Name: telefono
   m_TagString: Untagged
@@ -1678,6 +1868,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1945589670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945589667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 49
 --- !u!1 &2079460384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +2035,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2141882161}
   - component: {fileID: 2141882162}
+  - component: {fileID: 2141882163}
   m_Layer: 0
   m_Name: portaStudio
   m_TagString: Untagged
@@ -1897,3 +2100,15 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &2141882163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2141882160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3cf94df8e2964056b203745f0584770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 42

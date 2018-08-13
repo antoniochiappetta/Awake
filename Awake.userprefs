@@ -1,6 +1,11 @@
 ﻿<Properties StartupConfiguration="{8BD757E1-DD67-690D-C605-8D85C3027D18}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/2D/Component/Menu/AW2DContextMenu.cs">
+    <Files>
+      <File FileName="Assets/Scripts/2D/Component/Menu/AW2DContextMenu.cs" Line="78" Column="19" />
+      <File FileName="Assets/Scripts/2D/Component/Menu/AW2DContextMenuElement.cs" Line="7" Column="51" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.awake PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
