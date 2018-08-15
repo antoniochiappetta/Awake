@@ -9,6 +9,7 @@ public class AW2DContextMenu: MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
     // MARK: - Properties
 
+    public Camera eyes;
     public Sprite examineSprite;
     public Sprite interactSprite;
     public Sprite pickSprite;
@@ -53,6 +54,17 @@ public class AW2DContextMenu: MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
 		if (phase == AW2DContextMenuPhase.folded)
 		{
+            float xDifference = Input.mousePosition.x - RectTransformUtility.WorldToScreenPoint(eyes, transform.position).x;
+            float yDifference = Input.mousePosition.y - RectTransformUtility.WorldToScreenPoint(eyes, transform.position).y;
+            Debug.Log(xDifference);
+            Debug.Log(yDifference);
+            if (xDifference > -115.0f && xDifference < -45.0f && yDifference < 35.0f && yDifference > -35.0f) {
+                sendActionMessage(0);
+            } else if (xDifference > -35.0f && xDifference < 35.0f && yDifference > 45.0f && yDifference < 115.0f) {
+                sendActionMessage(1);
+            } else if (xDifference < 115.0f && xDifference > 45.0f && yDifference < 35.0f && yDifference > -35.0f) {
+                sendActionMessage(2);
+            }
 			disableMenu();
 		}
 	}
@@ -81,6 +93,9 @@ public class AW2DContextMenu: MonoBehaviour, IPointerDownHandler, IPointerUpHand
                 action.transform.parent = actionManager.transform;
                 action.transform.localPosition = Vector3.zero;
                 action.transform.localScale = new Vector3(0.015f, 0.015f, 0);
+                CircleCollider2D circleCollider = action.AddComponent<CircleCollider2D>();
+                Rigidbody2D rigidBody2D = action.AddComponent<Rigidbody2D>();
+                rigidBody2D.isKinematic = true;
                 AW2DContextMenuElement contextMenuComponent = action.AddComponent<AW2DContextMenuElement>();
                 Image actionRenderer = action.AddComponent<Image>();
                 actionRenderer.enabled = false;
@@ -105,7 +120,7 @@ public class AW2DContextMenu: MonoBehaviour, IPointerDownHandler, IPointerUpHand
 						action.name = "Use node";
                         actionRenderer.sprite = useSprite;
                         break;
-                }
+				}
 			}
         }
     }
@@ -115,9 +130,10 @@ public class AW2DContextMenu: MonoBehaviour, IPointerDownHandler, IPointerUpHand
 		Debug.Log("enable menu");
         phase = AW2DContextMenuPhase.folding;
         for (int i = 0; i < actionManager.transform.childCount; i++) {
-            Image actionRenderer = actionManager.transform.GetChild(i).GetComponent<Image>();
+            Transform action = actionManager.transform.GetChild(i);
+            Image actionRenderer = action.GetComponent<Image>();
             actionRenderer.enabled = true;
-            actionRenderer.transform.localPosition = new Vector3(getXPosition(i), getYPosition(i), 0);
+            action.transform.localPosition = new Vector3(getXPosition(i), getYPosition(i), 0);
         }
         phase = AW2DContextMenuPhase.folded;
 
@@ -128,9 +144,10 @@ public class AW2DContextMenu: MonoBehaviour, IPointerDownHandler, IPointerUpHand
         Debug.Log("disable menu");
         phase = AW2DContextMenuPhase.unfolding;
         for (int i = 0; i < actionManager.transform.childCount; i++) {
-            Image actionRenderer = actionManager.transform.GetChild(i).GetComponent<Image>();
+            Transform action = actionManager.transform.GetChild(i);
+            Image actionRenderer = action.GetComponent<Image>();
 			actionRenderer.enabled = false;
-            actionRenderer.transform.localPosition = Vector3.zero;
+            action.transform.localPosition = Vector3.zero;
 		}
         phase = AW2DContextMenuPhase.resting;
     }
@@ -161,6 +178,27 @@ public class AW2DContextMenu: MonoBehaviour, IPointerDownHandler, IPointerUpHand
                 return (((numberOfActions - 1) / 2) * distance) - Mathf.Abs(index - (numberOfActions - 1) / 2) * distance;
         }
         return 0;
+    }
+
+	private void sendActionMessage(int actionIndex)
+	{
+		Transform action = actionManager.transform.GetChild(actionIndex);
+        switch (action.name) {
+            case "Examine node":
+                SendMessage("examine");
+                break;
+            case "Interact node":
+                SendMessage("interactWith");
+                break;
+            case "Pick node":
+                SendMessage("pickUp");
+                break;
+            case "Say node":
+                break;
+            case "Use node":
+                SendMessage("useOn");
+                break;
+        }
     }
 
 }

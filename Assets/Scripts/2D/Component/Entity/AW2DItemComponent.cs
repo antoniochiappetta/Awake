@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 public class AW2DItemComponent : AW2DEntityComponent
 {
@@ -19,27 +20,35 @@ public class AW2DItemComponent : AW2DEntityComponent
 		states = new Dictionary<int, AW2DItemBaseState>();
     }
 
-    // MARK: - Actions
+	// MARK: - Actions
 
-    void examine() {
+	void examine()
+	{
+		Debug.Log("Examine method called");
         AW2DAction examineAction = states[currentState].examineAction;
         //examineAction.subject = this;
         examineAction.execute();
     }
 
-    void interactWith() {
+	void interactWith()
+	{
+		Debug.Log("Interact with method called");
         AW2DAction interactWithAction = states[currentState].interactWithAction;
         //interactWithAction.subject = this;
         interactWithAction.execute();
     }
 
-    void pickUp() {
+	void pickUp()
+	{
+		Debug.Log("Pick up method called");
         AW2DAction pickUpAction = states[currentState].pickUpAction;
         //pickUpAction.subject = this;
         pickUpAction.execute();
     }
 
-    bool useOn(AW2DEntity entity = null) {
+	bool useOn(AW2DEntity entity = null)
+	{
+		Debug.Log("Use on method called");
         AW2DAction useOnAction = states[currentState].useOnAction;
         //useOnAction.subject = this;
         useOnAction.execute();
