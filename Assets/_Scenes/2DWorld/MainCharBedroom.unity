@@ -1798,6 +1798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e3428a83f214637b6af789cc8efb4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eyes: {fileID: 1516822645}
   examineSprite: {fileID: 21300000, guid: 8dbe476f1aed1493ba4c2fcd3e49762e, type: 3}
   interactSprite: {fileID: 21300000, guid: 9031dfb873ea2451a94442179d0f4557, type: 3}
   pickSprite: {fileID: 21300000, guid: 16f4784282a95411381bb089b21bbdea, type: 3}
