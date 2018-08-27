@@ -46,9 +46,9 @@ public class AW2DItem: AW2DEntityComponent
 
         AW2DInteractAction useInteraction = useOnAction as AW2DInteractAction;
         if (useInteraction != null) {
-            useInteraction.interactionObject = entity;
+            //useInteraction.interactionObject = entity;
             useInteraction.execute();
-            return useInteraction.hasInteracted;
+            //return useInteraction.hasInteracted;
         }
 
         useOnAction.execute();

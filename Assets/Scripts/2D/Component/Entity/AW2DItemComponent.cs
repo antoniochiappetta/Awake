@@ -18,6 +18,7 @@ public class AW2DItemComponent : AW2DEntityComponent
     private void Start()
 	{
 		states = new Dictionary<int, AW2DItemBaseState>();
+        currentState = 0; // NO CONTROLLA
 
         switch (this.id) {
 
@@ -57,10 +58,35 @@ public class AW2DItemComponent : AW2DEntityComponent
                 // Use on con la door set locked to false e apri porta
                 break;
             case AW2DEntityID.mainroom_door:
-                // Interact dice se è chiusa oppure cambia stanza
+                AW2DSayAction sayDoorAction = new AW2DSayAction("The door is closed");
+                sayDoorAction.subject = this;
+                sayDoorAction.parameters = new Dictionary<string, string>();
+                sayDoorAction.nextState = 0;
+                AW2DItemBaseState sayDoorState = new AW2DItemBaseState("examine", sayDoorAction);
+                states.Add(0, sayDoorState);
+                //AW2DUseAction openDoorAction = new AW2DUseAction();
+                AW2DInteractAction interactDoorAction = new AW2DInteractAction();
+                interactDoorAction.subject = this;
+                interactDoorAction.sceneToMove = "_Scenes/2DWorld/UpstairsCorridor";
+                interactDoorAction.parameters = new Dictionary<string, string>();
+                interactDoorAction.nextState = 2;
+                AW2DItemBaseState goToCorridorState = new AW2DItemBaseState("interact", interactDoorAction);
+                states.Add(2, goToCorridorState);
                 break;
             case AW2DEntityID.mainroom_bed:
-                // Vai nel 3D
+                AW2DSayAction sayBedAction = new AW2DSayAction("I should explore the house before going to bed");
+                sayBedAction.subject = this;
+                sayBedAction.parameters = new Dictionary<string, string>();
+                sayBedAction.nextState = 0;
+                AW2DItemBaseState sayBedState = new AW2DItemBaseState("examine", sayBedAction);
+                states.Add(0, sayBedState);
+                AW2DInteractAction goToBedAction = new AW2DInteractAction();
+                goToBedAction.subject = this;
+                goToBedAction.sceneToMove = "_Scenes/3DWorld";
+                goToBedAction.parameters = new Dictionary<string, string>();
+                goToBedAction.nextState = 2;
+                AW2DItemBaseState goToBedState = new AW2DItemBaseState("interact", goToBedAction);
+                states.Add(1, goToBedState);
                 break;
 
             default:
@@ -108,9 +134,9 @@ public class AW2DItemComponent : AW2DEntityComponent
 
         AW2DInteractAction useInteraction = useOnAction as AW2DInteractAction;
         if (useInteraction != null) {
-            useInteraction.interactionObject = entity;
+            //useInteraction.interactionObject = entity;
             useInteraction.execute();
-            return useInteraction.hasInteracted;
+            //return useInteraction.hasInteracted;
         }
 
         useOnAction.execute();

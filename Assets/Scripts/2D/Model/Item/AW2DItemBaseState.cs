@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class AW2DItemBaseState
 {
     // MARK: - Properties
@@ -18,7 +20,8 @@ public class AW2DItemBaseState
         this.useOnAction = useOnAction;
     }
 
-    public AW2DItemBaseState(string actionType, AW2DAction action) {
+	public AW2DItemBaseState(string actionType, AW2DAction action)
+	{
         switch (actionType) {
             case "examine":
                 this.examineAction = action;

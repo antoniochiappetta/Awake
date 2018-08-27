@@ -8,7 +8,7 @@ public class AW2DSayAction: AW2DAction {
 
     // MARK: - Lifecycle
 
-    AW2DSayAction(string textToSay) {
+    public AW2DSayAction(string textToSay) {
         this.textToSay = textToSay;
     }
 	
