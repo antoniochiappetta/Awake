@@ -1,4 +1,6 @@
-﻿public class AW2DSayAction: AW2DAction {
+﻿using System.Collections.Generic;
+
+public class AW2DSayAction: AW2DAction {
 
     // MARK: - Properties
 
@@ -16,6 +18,9 @@
 		if (subject != null)
 		{
 			subject.actionsDelegate.say(textToSay);
+            foreach(string key in parameters.Keys) {
+                
+            }
         }
     }
 }

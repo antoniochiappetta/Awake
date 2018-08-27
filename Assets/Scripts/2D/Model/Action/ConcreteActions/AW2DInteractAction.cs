@@ -1,13 +1,20 @@
-﻿public class AW2DInteractAction : AW2DAction
+﻿using System.Collections.Generic;
+
+public class AW2DInteractAction : AW2DAction
 {
     // MARK: - Properties
 
-    public AW2DEntity interactionObject;
+    public AW2DEntityComponent interactionObject;
 	public bool hasInteracted;
 
     // MARK: - Lifecycle
 
-    AW2DInteractAction(AW2DEntity interactionObject) {
+    public AW2DInteractAction() {
+        this.interactionObject = null;
+        this.hasInteracted = false;
+    }
+
+    public AW2DInteractAction(AW2DEntityComponent interactionObject) {
         this.interactionObject = interactionObject;
         this.hasInteracted = false;
     }
@@ -18,6 +25,9 @@
 		if (subject != null)
 		{
 			subject.actionsDelegate.interact(subject, interactionObject);
+            foreach(string key in parameters.Keys) {
+                
+            }
         }
     }
 }

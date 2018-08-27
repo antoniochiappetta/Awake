@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-public class AW2DItem: AW2DEntity
+public class AW2DItem: AW2DEntityComponent
 {
     // MARK: - Properties
 
@@ -14,7 +14,8 @@ public class AW2DItem: AW2DEntity
 
     // MARK: - Lifecycle
 
-    public AW2DItem(AW2DEntityID id, string name): base(id, name) {
+    private void Start()
+    {
         states = new Dictionary<int, AW2DItemBaseState>();
     }
 
@@ -38,7 +39,7 @@ public class AW2DItem: AW2DEntity
         pickUpAction.execute();
     }
 
-    bool useOn(AW2DEntity entity = null) {
+    bool useOn(AW2DEntityComponent entity = null) {
         AW2DAction useOnAction = states[currentState].useOnAction;
         useOnAction.subject = this;
         useOnAction.execute();

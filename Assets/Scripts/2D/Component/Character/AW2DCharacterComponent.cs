@@ -10,7 +10,6 @@ public class AW2DCharacterComponent: MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     private Rigidbody2D rigidBody;
-    private AW2DCharacter character;
 
     // MARK: - Lifecycle
 
@@ -20,7 +19,6 @@ public class AW2DCharacterComponent: MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody2D>();
-        character = new AW2DCharacter(AW2DEntityID.character_laz, "Laz");
 
     }
 

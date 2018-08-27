@@ -1,8 +1,10 @@
-﻿public class AW2DUseAction : AW2DAction {
+﻿using System.Collections.Generic;
+
+public class AW2DUseAction : AW2DAction {
 
     // MARK: - Lifecycle
 
-    AW2DUseAction(AW2DEntity subject) {
+    AW2DUseAction(AW2DEntityComponent subject) {
         this.subject = subject;
     }
 	
@@ -11,5 +13,8 @@
     public override void execute() {
         this.subject.actionsDelegate.moveTo(subject);
         this.subject.actionsDelegate.use(subject);
+        foreach(string key in parameters.Keys) {
+            
+        }
     }
 }

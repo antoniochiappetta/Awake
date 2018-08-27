@@ -13,7 +13,7 @@ public abstract class AW2DEntityComponent: MonoBehaviour
     }
     public AW2DCommonActionsDelegate actionsDelegate;
 
-    // MARK: - Lifecycle
+	// MARK: - Lifecycle
 
     private void Start()
     {

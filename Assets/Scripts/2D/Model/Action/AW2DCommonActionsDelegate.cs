@@ -2,11 +2,11 @@
 
     // MARK: - Abstract methods
 
-    abstract public void moveTo(AW2DEntity entity);
+    abstract public void moveTo(AW2DEntityComponent entity);
     abstract public void say(string text);
-    abstract public void turnTowards(AW2DEntity entity);
-    abstract public void pick(AW2DEntity entity);
-    abstract public void use(AW2DEntity entity);
-    abstract public void interact(AW2DEntity source, AW2DEntity destination);
+    abstract public void turnTowards(AW2DEntityComponent entity);
+    abstract public void pick(AW2DEntityComponent entity);
+    abstract public void use(AW2DEntityComponent entity);
+    abstract public void interact(AW2DEntityComponent source, AW2DEntityComponent destination);
 	
 }

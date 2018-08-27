@@ -2,9 +2,10 @@
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/2D/Component/Menu/AW2DContextMenu.cs">
     <Files>
-      <File FileName="Assets/Scripts/2D/Component/Menu/AW2DContextMenu.cs" Line="198" Column="27" />
-      <File FileName="Assets/Scripts/2D/Component/Menu/AW2DContextMenuElement.cs" Line="16" Column="40" />
-      <File FileName="Assets/Scripts/2D/Component/Entity/AW2DItemComponent.cs" Line="51" Column="14" />
+      <File FileName="Assets/Scripts/2D/Component/Entity/AW2DItemComponent.cs" Line="4" Column="14" />
+      <File FileName="Assets/Scripts/2D/Component/Entity/AW2DEntityComponent.cs" Line="16" Column="22" />
+      <File FileName="Assets/Scripts/2D/Component/Character/AW2DCameraComponent.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/2D/Component/Menu/AW2DContextMenu.cs" Line="95" Column="78" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.awake PreferredExecutionTarget="Unity.Editor" />

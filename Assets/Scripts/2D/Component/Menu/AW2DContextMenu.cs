@@ -93,9 +93,6 @@ public class AW2DContextMenu: MonoBehaviour, IPointerDownHandler, IPointerUpHand
                 action.transform.parent = actionManager.transform;
                 action.transform.localPosition = Vector3.zero;
                 action.transform.localScale = new Vector3(0.015f, 0.015f, 0);
-                CircleCollider2D circleCollider = action.AddComponent<CircleCollider2D>();
-                Rigidbody2D rigidBody2D = action.AddComponent<Rigidbody2D>();
-                rigidBody2D.isKinematic = true;
                 AW2DContextMenuElement contextMenuComponent = action.AddComponent<AW2DContextMenuElement>();
                 Image actionRenderer = action.AddComponent<Image>();
                 actionRenderer.enabled = false;

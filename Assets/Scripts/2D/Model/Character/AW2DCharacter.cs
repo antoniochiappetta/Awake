@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-public class AW2DCharacter: AW2DEntity
+public class AW2DCharacter: AW2DEntityComponent
 {
     // MARK: - Properties
 
@@ -13,7 +13,8 @@ public class AW2DCharacter: AW2DEntity
 
     // MARK: - Lifecycle
 
-    public AW2DCharacter(AW2DEntityID id, string name): base(id, name) {
+    public void Start()
+    {
         this.states = new Dictionary<int, AW2DCharacterBaseState>();
     }
 

@@ -1,4 +1,6 @@
-﻿public class AW2DExamineAction: AW2DAction {
+﻿using System.Collections.Generic;
+
+public class AW2DExamineAction: AW2DAction {
 
     // MARK: - Properties
 
@@ -17,6 +19,9 @@
 		{
 			subject.actionsDelegate.turnTowards(subject);
 			subject.actionsDelegate.say(descriptionText);
+            foreach(string key in parameters.Keys) {
+                
+            }
         }
     }
 }

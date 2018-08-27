@@ -1,8 +1,12 @@
-﻿﻿public abstract class AW2DAction {
+﻿using System.Collections.Generic;
+
+﻿public abstract class AW2DAction {
 
     // MARK: - Properties
 
-    public AW2DEntity subject;
+    public AW2DEntityComponent subject;
+    public Dictionary<string, string> parameters;
+    public int nextState;
 
     // MARK: - Abstract methods
 

@@ -1,8 +1,10 @@
-﻿public class AW2DPickAction : AW2DAction {
+﻿using System.Collections.Generic;
+
+public class AW2DPickAction : AW2DAction {
 
     // MARK: - Lifecycle
 
-    AW2DPickAction() { }
+    public AW2DPickAction() { }
 	
     // MARK: - Actions
 
@@ -11,6 +13,9 @@
 		{
 			subject.actionsDelegate.moveTo(subject);
             subject.actionsDelegate.pick(subject);
+            foreach (string key in parameters.Keys) {
+                // Set value for key
+            }
         }
     }
 }
